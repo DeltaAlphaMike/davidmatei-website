@@ -11,25 +11,12 @@
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
     body { font-family: 'Inter', system-ui, sans-serif; }
     .heading { font-family: 'Space Grotesk', sans-serif; }
-    
     .neon-red { text-shadow: 0 0 6px #ff073a, 0 0 12px #ff073a, 0 0 22px #e11d48; }
     .neon-purple { text-shadow: 0 0 6px #c026d3, 0 0 12px #c026d3, 0 0 22px #7e22ce; }
-    
-    .neon-button { 
-      box-shadow: 0 0 15px rgba(192,38,211,0.35), 0 0 30px rgba(192,38,211,0.2); 
-      transition: all 0.4s ease; 
-    }
-    .neon-button:hover { 
-      box-shadow: 0 0 22px rgba(192,38,211,0.5), 0 0 40px rgba(192,38,211,0.3); 
-      transform: translateY(-3px); 
-    }
-    .red-neon-button { 
-      box-shadow: 0 0 18px #ff073a, 0 0 35px rgba(255,7,58,0.4); 
-    }
-    .hero-bg { 
-      background: linear-gradient(rgba(0,0,0,0.78), rgba(25,0,35,0.88)), 
-                  url('https://davidmatei.de/wp-content/uploads/2025/12/david-matei-hero.jpg') center/cover no-repeat fixed; 
-    }
+    .neon-button { box-shadow: 0 0 15px rgba(192,38,211,0.35), 0 0 30px rgba(192,38,211,0.2); transition: all 0.4s ease; }
+    .neon-button:hover { box-shadow: 0 0 22px rgba(192,38,211,0.5), 0 0 40px rgba(192,38,211,0.3); transform: translateY(-3px); }
+    .red-neon-button { box-shadow: 0 0 18px #ff073a, 0 0 35px rgba(255,7,58,0.4); }
+    .hero-bg { background: linear-gradient(rgba(0,0,0,0.78), rgba(25,0,35,0.88)), url('https://davidmatei.de/wp-content/uploads/2025/12/david-matei-hero.jpg') center/cover no-repeat fixed; }
   </style>
 </head>
 <body class="bg-neutral-950 text-white overflow-x-hidden">
@@ -45,6 +32,7 @@
         <a href="#ueber" class="hover:text-red-400 transition neon-red">ÜBER MICH</a>
         <a href="#buch" class="hover:text-red-400 transition neon-red">DAS BUCH</a>
         <a href="#inhalte" class="hover:text-red-400 transition neon-red">INHALTE</a>
+        <a href="#leistungen" class="hover:text-red-400 transition neon-red">LEISTUNGEN</a>
         <a href="#blog" class="hover:text-red-400 transition neon-red">BLOG</a>
         <a href="#kontakt" class="hover:text-red-400 transition neon-red">KONTAKT</a>
       </div>
@@ -81,9 +69,122 @@
     </div>
   </section>
 
-  <!-- Restliche Abschnitte (Über mich, Buch, Inhalte, Blog, Kontakt) wie im vorherigen Code – alles vollständig enthalten -->
+  <!-- ÜBER MICH -->
+  <section id="ueber" class="py-28 bg-black">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+      <div>
+        <img src="https://davidmatei.de/wp-content/uploads/2025/12/david-portrait.jpg" class="rounded-3xl shadow-2xl shadow-red-500/30 w-full" alt="David Matei">
+      </div>
+      <div>
+        <div class="uppercase tracking-[3px] text-red-400 text-sm mb-4 neon-red">HAUPTMANN DER BUNDESWEHR • JUGENDOFFIZIER</div>
+        <h2 class="heading text-6xl font-semibold neon-red">David Matei</h2>
+        <p class="mt-8 text-2xl text-neutral-300 leading-relaxed">
+          1993 in Nürnberg geboren. Offizier und Content Creator. Ich erkläre Sicherheitspolitik so, dass auch junge Menschen verstehen, was in der Welt los ist.
+        </p>
+        <div class="mt-10 text-red-400">2025 ausgezeichnet mit dem Karl-Carstens-Preis für sicherheitspolitische Kommunikation.</div>
+      </div>
+    </div>
+  </section>
 
-  <!-- (Der Rest ist identisch mit meiner letzten Nachricht – falls du den vollen Code nochmal brauchst, sag einfach „vollen Code“) -->
+  <!-- DAS BUCH -->
+  <section id="buch" class="py-28 bg-gradient-to-b from-black to-neutral-950">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="uppercase text-red-400 tracking-[6px] text-xl neon-red mb-6">ERSCHEINT FEBRUAR 2026</div>
+      <h2 class="heading text-7xl font-bold neon-red">"DEUTSCHLAND IST ES WERT"</h2>
+      <p class="text-3xl text-neutral-300 mt-8 max-w-2xl mx-auto">
+        Mein erstes Buch. Entstanden aus dem einen Satz bei „hart aber fair“, der ganz Deutschland zum Zuhören gebracht hat.
+      </p>
+      <a href="https://www.herder.de/geschichte-politik/shop/p4/94964-deutschland-ist-es-wert-klappenbroschur/" target="_blank" class="mt-16 inline-block bg-red-600 hover:bg-red-500 neon-button text-white px-16 py-8 rounded-3xl font-bold text-2xl">
+        JETZT VORBESTELLEN →
+      </a>
+    </div>
+  </section>
 
+  <!-- INHALTE / KANÄLE -->
+  <section id="inhalte" class="py-28 bg-black">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="heading text-5xl font-semibold text-center mb-16 neon-red">Meine Kanäle</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <a href="https://www.tiktok.com/@sicherheitspolitik" target="_blank" class="bg-neutral-900 p-8 rounded-3xl hover:bg-neutral-800 transition group">
+          <i class="fa-brands fa-tiktok text-6xl text-red-400 mb-6"></i>
+          <h3 class="text-2xl font-semibold mb-3">TikTok</h3>
+          <p class="text-neutral-400">Kurz & direkt – über 500.000 Follower</p>
+        </a>
+        <a href="https://www.youtube.com/@davidmatei" target="_blank" class="bg-neutral-900 p-8 rounded-3xl hover:bg-neutral-800 transition group">
+          <i class="fa-brands fa-youtube text-6xl text-red-400 mb-6"></i>
+          <h3 class="text-2xl font-semibold mb-3">YouTube</h3>
+          <p class="text-neutral-400">Lange Erklärvideos & Interviews</p>
+        </a>
+        <a href="#" target="_blank" class="bg-neutral-900 p-8 rounded-3xl hover:bg-neutral-800 transition group">
+          <i class="fa-solid fa-podcast text-6xl text-red-400 mb-6"></i>
+          <h3 class="text-2xl font-semibold mb-3">Podcast</h3>
+          <p class="text-neutral-400">Sicherheitspolitik im Gespräch</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEISTUNGEN -->
+  <section id="leistungen" class="py-28 bg-neutral-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="heading text-5xl font-semibold text-center mb-16 neon-red">Leistungen</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-neutral-900 p-10 rounded-3xl">
+          <h3 class="text-2xl font-semibold mb-4">Vorträge & Workshops</h3>
+          <p class="text-neutral-400">Für Schulen, Universitäten, Unternehmen und die Bundeswehr</p>
+        </div>
+        <div class="bg-neutral-900 p-10 rounded-3xl">
+          <h3 class="text-2xl font-semibold mb-4">Interviews & Medien</h3>
+          <p class="text-neutral-400">TV, Radio, Podcasts – klar und verständlich</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="py-28 bg-black">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="heading text-5xl font-semibold text-center mb-16 neon-red">Aktuelle Beiträge</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Hier später deine echten Beiträge einfügen -->
+        <div class="bg-neutral-900 rounded-3xl overflow-hidden">
+          <img src="https://davidmatei.de/wp-content/uploads/.../blog1.jpg" class="w-full h-48 object-cover">
+          <div class="p-8">
+            <h3 class="font-semibold text-xl mb-3">Beitragstitel 1</h3>
+            <p class="text-neutral-400">Kurzer Teaser...</p>
+          </div>
+        </div>
+        <!-- Weitere Karten einfach kopieren und anpassen -->
+      </div>
+      <div class="text-center mt-12">
+        <a href="https://davidmatei.de/blog" class="text-red-400 hover:text-red-300 text-lg">Alle Beiträge ansehen →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt" class="py-28 bg-neutral-950">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <h2 class="heading text-5xl font-semibold mb-8 neon-red">Kontakt & Buchen</h2>
+      <p class="text-xl text-neutral-300 mb-12">Vorträge, Interviews, Kooperationen – schreib mir!</p>
+      <form action="https://formspree.io/f/deine-id" method="POST" class="space-y-6">
+        <input type="text" name="name" placeholder="Dein Name" class="w-full bg-neutral-900 border border-red-500/30 rounded-2xl px-6 py-4">
+        <input type="email" name="email" placeholder="Deine E-Mail" class="w-full bg-neutral-900 border border-red-500/30 rounded-2xl px-6 py-4">
+        <textarea name="message" rows="6" placeholder="Deine Nachricht..." class="w-full bg-neutral-900 border border-red-500/30 rounded-2xl px-6 py-4"></textarea>
+        <button type="submit" class="w-full bg-red-600 hover:bg-red-500 neon-button text-white py-6 rounded-3xl font-bold text-xl">NACHRICHT SENDEN</button>
+      </form>
+      <div class="mt-10 text-neutral-500">Oder direkt: info@davidmatei.de</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black py-16 border-t border-red-900/30 text-center text-neutral-500 text-sm">
+    © 2026 David Matei • <a href="#" class="hover:text-red-400">Impressum</a> • <a href="#" class="hover:text-red-400">Datenschutz</a><br>
+    Made with ❤️ im UV-Studio
+  </footer>
+
+  <script>
+    tailwind.config = { content: [], theme: { extend: {} } }
+  </script>
 </body>
 </html>
